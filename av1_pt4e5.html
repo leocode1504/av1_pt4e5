@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pequeno Anúncio de Evento + Seção de Depoimentos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #d8b4fe, #c084fc); /* roxo clarinho */
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px;
+    }
+
+    .evento {
+      background: linear-gradient(135deg, rgba(237, 233, 254, 0.9), rgba(221, 214, 254, 0.9)), 
+                  url("https://img.freepik.com/vetores-gratis/os-designers-estao-trabalhando-no-design-da-pagina-da-web-web-design-interface-do-usuario-e-organizacao-de-conteudo-de-experiencia-do-usuario_335657-4403.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      padding: 20px;
+      width: 40%;
+      text-align: center;
+      color: #4c1d95;
+      box-shadow: 0 6px 16px rgba(76, 29, 149, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .evento:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(76, 29, 149, 0.45);
+    }
+
+    .evento h1 {
+      margin-bottom: 10px;
+      color: #4c1d95;
+    }
+
+    .evento p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #6d28d9;
+    }
+
+    .evento ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .evento ul li {
+      margin: 6px 0;
+      color: #4c1d95;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #9333ea;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(147, 51, 234, 0.4);
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #7e22ce;
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(147, 51, 234, 0.6);
+    }
+
+    .depoimentos {
+      width: 50%;
+    }
+
+    .depoimento {
+      background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+      color: #4c1d95;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 6px 16px rgba(76, 29, 149, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .depoimento:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(76, 29, 149, 0.45);
+    }
+
+    blockquote {
+      font-style: italic;
+      font-size: 14px;
+      margin: 0 0 12px 0;
+      border-left: 4px solid #9333ea;
+      padding-left: 10px;
+      color: #4c1d95;
+    }
+
+    .depoimento p {
+      font-weight: bold;
+      text-align: right;
+      margin-bottom: 8px;
+      color: #6d28d9;
+    }
+
+    .depoimento span {
+      color: #9333ea;
+      font-size: 18px;
+    }
+
+    .depoimentos .button {
+      margin-top: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="evento">
+    <h1>Workshop de Design Web</h1>
+    <p>📅 25 de Setembro de 2025 — 19h00</p>
+    <ul>
+      <li>Introdução ao HTML & CSS</li>
+      <li>Princípios de Layout Moderno</li>
+      <li>Dicas de UI/UX para Iniciantes</li>
+    </ul>
+    <a href="#" class="button">Inscreva-se Agora!</a>
+  </div>
+
+  <div class="depoimentos">
+    <div class="depoimento">
+      <blockquote>
+        Este workshop mudou a forma como eu vejo a criação de sites. Simples, prático e divertido!
+      </blockquote>
+      <p>— Maria Silva</p>
+      <span>⭐️⭐️⭐️⭐️⭐️</span>
+    </div>
+
+    <div class="depoimento">
+      <blockquote>
+        O conteúdo foi direto ao ponto e muito bem explicado. Recomendo para qualquer iniciante!
+      </blockquote>
+      <p>— João Pereira</p>
+      <span>⭐️⭐️⭐️⭐️</span>
+    </div>
+
+    <a href="#" class="button">Ver mais depoimentos</a>
+  </div>
+
+</body>
+</html>
